@@ -8,7 +8,7 @@ const postRoutes = require("./routes/postRoutes");
 require("dotenv").config();
 app.use(
   cors({
-    origin: "https://vacebook-server.vercel.app",
+    origin: "*",
   })
 );
 ConnectDB();
