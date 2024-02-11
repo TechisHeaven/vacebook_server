@@ -6,11 +6,7 @@ const port = 3000;
 const userRoutes = require("./routes/userRoutes");
 const postRoutes = require("./routes/postRoutes");
 require("dotenv").config();
-app.use(
-  cors({
-    origin: "*",
-  })
-);
+app.use(cors());
 ConnectDB();
 app.use(express.json());
 app.use(express.static(__dirname));
